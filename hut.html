@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>portifolio.COM</h1>
+<hr>
+
+<h2>PORTFOLIO</h2>
+<p>welcome to my profile page, i am learning student of software development.</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="images/black.jfif" alt="Mountains" style="width:100%">
+      <h3>My Work</h3>
+      <p>my work as of now is learning software developement as my goal is finally to become a webpage creator. so far it has been great and interesting so far.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/dark3.jpg" alt="Lights" style="width:100%">
+      <h3>My hobbies</h3>
+      <p>some of my hobbies would include the following; birdwatching, writing novels, watching movies, drawing and sketching cartoon figures.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/grey.png" alt="Nature" style="width:100%">
+      <h3>My skills</h3>
+      <p>as of this moment, i have learned to use HTML and CSS, next will be javascript and hopefully add in addtion to the mentioned above will be python and java.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/blue.jpg" alt="Mountains" style="width:100%">
+      <h3>why i chose to study at moring</h3>
+      <p>the offered online classes and it is convient consindering the current state of the world, plus it came with a self paced learning and study which was helpful to me.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="images/comp4.jpg" alt="Bear" style="width:100%">
+  <h3>about me</h3>
+  <p>normally a quiet person who enjoys their silience and music. when it comes to drawing or sketching i can easily be carried away and be lost at it for hours to no end.</p>
+  <p>i work better alone and faster that way, but i am also a decent team worker. not much of an outgoing person as i mentioned, i do like my own space and silence while listening to music.</p>
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
